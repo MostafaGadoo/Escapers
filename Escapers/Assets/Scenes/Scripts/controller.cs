@@ -13,7 +13,7 @@ public class controller : MonoBehaviour
     public Transform groundCheck;
     public float groundCheckRadius;
     public LayerMask whatIsGround;
-    private bool grounded;
+    public bool grounded;
     private Animator anim;
     public int totalcoin;
 
