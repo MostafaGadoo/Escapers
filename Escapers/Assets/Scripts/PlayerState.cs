@@ -71,7 +71,7 @@ public class PlayerState : MonoBehaviour
                 this.health = 0;
             if (this.lives > 0 && this.health == 0)
             {
-                //FindObjectOfType<LevelManager>().RespawnPlayer();
+                FindObjectOfType<levelManager>().RespawnPlayer();
                 this.health = 6;
                 this.lives--;
             }
