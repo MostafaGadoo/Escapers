@@ -29,7 +29,9 @@ public class walkingEnemy : enemyController
     void OnTriggerEnter2D(Collider2D collider) {
         if (collider.tag == "Wall") {
             Flip();
-        } else if (collider.tag == "Player") {
+        } else if (collider.tag == "Enemy") {
+            Flip();
+        } if (collider.tag == "player") {
             FindObjectOfType<PlayerState>().TakeDamage(damage);
             Flip();
         }
